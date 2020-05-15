@@ -1,0 +1,198 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:lh2="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:background="@color/colorWhite"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <com.example.cj.videoeditor.widget.CameraView
+        android:id="@+id/camera_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <!--  <ImageView
+              android:id="@+id/btn_camera_switch"
+              android:src="@drawable/selector_rewardcamera"
+              android:layout_alignParentRight="true"
+              android:layout_marginRight="10dp"
+              android:layout_marginTop="10dp"
+              android:layout_width="40dp"
+              android:layout_height="40dp"/>-->
+
+        <RelativeLayout
+            android:layout_width="105dp"
+            android:layout_above="@+id/rela"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="50dp"
+            android:layout_height="30dp">
+            <RelativeLayout
+                android:id="@+id/changan_rela"
+                android:background="@drawable/changan"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+            </RelativeLayout>
+            <TextView
+                android:text="长按录制视频"
+                style="@style/textColor"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" />
+        </RelativeLayout>
+        <RelativeLayout
+            android:id="@+id/rela"
+            android:layout_alignParentBottom="true"
+            android:layout_width="match_parent"
+            android:layout_height="150dp">
+            <LinearLayout
+                android:id="@+id/linear2"
+                android:orientation="horizontal"
+                android:layout_centerHorizontal="true"
+                android:layout_marginBottom="20dp"
+                android:layout_width="match_parent"
+                android:gravity="center_vertical"
+                android:layout_height="match_parent">
+                <LinearLayout
+                    android:layout_weight="1"
+                    android:id="@+id/relative1"
+                    android:layout_width="0dp"
+                    android:gravity="center"
+                    android:layout_height="match_parent">
+                    <ImageView
+                        android:id="@+id/btn_camera_beauty"
+                        android:layout_width="60dp"
+                        android:layout_height="60dp"
+                        android:visibility="gone"
+                        android:src="@mipmap/index_xiangce_icon"/>
+                </LinearLayout>
+                <LinearLayout
+                    android:id="@+id/linear3"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:layout_height="match_parent">
+                    <com.example.cj.videoeditor.widget.CircularProgressView
+                        android:id="@+id/mCapture"
+                        android:background="@drawable/xiangji"
+                        android:layout_width="70dp"
+                        android:layout_height="70dp"
+                        android:clickable="true" />
+                </LinearLayout>
+                <LinearLayout
+                    android:id="@+id/linear"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:layout_height="match_parent">
+                    <ImageView
+                        android:id="@+id/btn_camera_filter"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/lvjing_bai"/>
+                </LinearLayout>
+            </LinearLayout>
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/horilist"
+                android:layout_width="match_parent"
+                android:visibility="gone"
+                android:layout_marginLeft="20dp"
+                android:layout_height="60dp">
+
+            </android.support.v7.widget.RecyclerView>
+
+
+        </RelativeLayout>
+
+
+        <RelativeLayout
+            android:id="@+id/relative"
+            android:layout_width="match_parent"
+            android:visibility="gone"
+            android:layout_height="100dp">
+
+        </RelativeLayout>
+
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:gravity="center_vertical"
+            android:layout_width="match_parent"
+            android:layout_height="50dp">
+            <LinearLayout
+                android:id="@+id/fanhui"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:layout_height="30dp">
+                <ImageView
+                    android:src="@mipmap/back_icon"
+                    android:layout_gravity="center_vertical"
+                    android:layout_width="wrap_content"
+                    android:layout_height="20dp" />
+                <TextView
+                    android:text="返回"
+                    android:layout_marginLeft="3dp"
+                    android:textColor="@color/colorWhite"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+            </LinearLayout>
+
+            <RelativeLayout
+                android:layout_weight="1"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                >
+                <TextView
+                    android:id="@+id/bili"
+                    android:layout_width="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:text="4:3"
+                    android:background="@drawable/bilikuang"
+                    android:textColor="@color/colorWhite"
+                    android:layout_height="wrap_content" />
+            </RelativeLayout>
+            <ImageView
+                android:id="@+id/more"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:src="@drawable/more"
+                android:layout_height="30dp" />
+            <ImageView
+                android:id="@+id/btn_camera_switch"
+                android:layout_weight="1"
+                android:layout_width="0dp"
+                android:src="@drawable/fanzhuanjingtou"
+                android:layout_height="30dp" />
+
+        </LinearLayout>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        <com.example.cj.videoeditor.widget.FocusImageView
+            android:id="@+id/focusImageView"
+            android:layout_width="75dip"
+            android:layout_height="75dip"
+            android:visibility="invisible"
+            app:focus_fail_id="@mipmap/focus_focus_failed"
+            app:focus_focusing_id="@mipmap/focus_focusing"
+            app:focus_success_id="@mipmap/focus_focused" />
+
+    </RelativeLayout>
+
+
+
+</FrameLayout>

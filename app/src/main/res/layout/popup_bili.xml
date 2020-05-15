@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:orientation="horizontal"
+    android:layout_height="100dp">
+<LinearLayout
+    android:layout_width="match_parent"
+    android:orientation="horizontal"
+    android:layout_height="80dp">
+   <!-- <TextView
+        android:id="@+id/text"
+        android:layout_width="0dp"
+        android:layout_weight="1"
+        android:text="默认"
+        android:gravity="center"
+        android:layout_marginLeft="20dp"
+        android:background="@drawable/bilikuang"
+        android:layout_gravity="center"
+        android:textSize="16sp"
+        android:textColor="@color/colorWhite"
+        android:layout_height="wrap_content" />-->
+    <TextView
+        android:id="@+id/text1"
+        android:layout_width="0dp"
+        android:layout_weight="1"
+        android:layout_gravity="center"
+        android:layout_marginLeft="20dp"
+        android:background="@drawable/bilikuang"
+        android:text="16:9"
+        android:gravity="center"
+        android:textSize="16sp"
+        android:textColor="@color/colorWhite"
+        android:layout_height="wrap_content" />
+    <TextView
+        android:id="@+id/text2"
+        android:layout_gravity="center"
+        android:layout_width="0dp"
+        android:layout_weight="1"
+        android:text="4:3"
+        android:layout_marginLeft="20dp"
+        android:background="@drawable/bilikuang"
+        android:textSize="16sp"
+        android:textColor="@color/colorWhite"
+        android:gravity="center"
+        android:layout_height="wrap_content" />
+    <TextView
+        android:id="@+id/text3"
+        android:layout_width="0dp"
+        android:layout_weight="1"
+        android:text="1:1"
+        android:textSize="16sp"
+        android:layout_gravity="center"
+        android:layout_marginLeft="20dp"
+        android:background="@drawable/bilikuang"
+        android:layout_marginRight="20dp"
+        android:textColor="@color/colorWhite"
+        android:gravity="center"
+        android:layout_height="wrap_content" />
+</LinearLayout>
+</LinearLayout>

@@ -1,0 +1,268 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/colorWhite"
+    android:orientation="vertical">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="20dp"
+        android:ellipsize="end"
+        android:lines="2"
+        android:text="这是文章标题，两行看看效果好不好"
+        android:textColor="@color/common_color"
+        android:textSize="24sp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="20dp"
+        android:orientation="horizontal">
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/recyclerView_zuji_like"
+            android:layout_width="wrap_content"
+            android:layout_height="20dp"
+            android:layout_gravity="center" />
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="5dp"
+            android:layout_weight="1"
+            android:gravity="start|center_vertical"
+            android:text="等100人喜欢"
+            android:textColor="#333333"
+            android:textSize="10sp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="15dp"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="2015-10-25创建"
+            android:textColor="@color/common_color"
+            android:textSize="12sp" />
+
+        <TextView
+
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="25dp"
+            android:text="2015-10-25创建"
+            android:textColor="@color/common_color"
+            android:textSize="12sp" />
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="55dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="5dp">
+
+        <ImageView
+            android:id="@+id/user_icon"
+            android:layout_width="45dp"
+            android:layout_height="45dp"
+            android:layout_centerVertical="true"
+            android:src="@mipmap/touxiang"
+           />
+
+        <TextView
+            android:id="@+id/user_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="7dp"
+            android:layout_toRightOf="@id/user_icon"
+            android:text="不会飞的鱼"
+            android:textColor="@color/common_color"
+            android:textSize="12sp" />
+
+        <com.yoyogo.android.view.DrawableTextView
+            android:id="@+id/zu_num"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/user_title"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="5dp"
+            android:layout_toRightOf="@id/user_icon"
+            android:drawableLeft="@mipmap/zu_icon"
+            android:drawablePadding="5dp"
+            android:gravity="center"
+            android:text="180"
+            android:textColor="@color/common_color"
+            android:textSize="10sp"
+            app:leftDrawable="@mipmap/zu_icon"
+            app:leftDrawableHeight="12dp"
+            app:leftDrawableWidth="12dp" />
+
+        <com.yoyogo.android.view.DrawableTextView
+            android:id="@+id/ji_num"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/user_title"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="5dp"
+            android:layout_toRightOf="@id/zu_num"
+            android:drawableLeft="@mipmap/pai_icon"
+            android:drawablePadding="5dp"
+            android:gravity="center"
+            android:text="180"
+            android:textColor="@color/common_color"
+            android:textSize="10sp"
+            app:leftDrawable="@mipmap/pai_icon"
+            app:leftDrawableHeight="12dp"
+            app:leftDrawableWidth="12dp" />
+
+        <Button
+            android:layout_width="60dp"
+            android:layout_height="30dp"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:background="@drawable/attention_btn_bg_unselect"
+            android:gravity="center"
+            android:text="@string/str_add_attention"
+            android:textColor="@color/colorWhite"
+            android:textSize="12sp" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/user_travel_info_bg">
+
+        <LinearLayout
+            android:id="@+id/ll_top"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/dp_10"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <com.yoyogo.android.view.DrawableTextView
+                android:id="@+id/travle_start"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_weight="1"
+                android:drawablePadding="10dp"
+                android:gravity="start|center_vertical"
+                android:text="乌镇"
+                android:textColor="@color/common_color"
+                android:textSize="15sp"
+                app:leftDrawable="@mipmap/travel_start"
+                app:leftDrawableHeight="15dp"
+                app:leftDrawableWidth="12dp" />
+
+            <com.yoyogo.android.view.DrawableTextView
+                android:id="@+id/travle_end"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:drawablePadding="10dp"
+                android:gravity="start|center_vertical"
+                android:text="乌镇"
+                android:textColor="@color/common_color"
+                android:textSize="15sp"
+                app:leftDrawable="@mipmap/travel_end"
+                app:leftDrawableHeight="15dp"
+                app:leftDrawableWidth="12dp" />
+
+            <View
+                android:layout_width="0dp"
+                android:layout_height="5dp"
+                android:layout_weight="1"
+                android:visibility="invisible" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/ll_top"
+            android:layout_margin="10dp"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <com.yoyogo.android.view.DrawableTextView
+                android:id="@+id/travle_past"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:drawablePadding="10dp"
+                android:gravity="start|center_vertical"
+                android:text="3个地点"
+                android:textColor="@color/common_color"
+                android:textSize="15sp"
+                app:leftDrawable="@mipmap/travel_past"
+                app:leftDrawableHeight="13dp"
+                app:leftDrawableWidth="13dp" />
+
+            <com.yoyogo.android.view.DrawableTextView
+                android:id="@+id/travle_time"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:drawablePadding="10dp"
+                android:gravity="start|center_vertical"
+                android:text="3天"
+                android:textColor="@color/common_color"
+                android:textSize="15sp"
+                app:leftDrawable="@mipmap/travle_time"
+                app:leftDrawableHeight="13dp"
+                app:leftDrawableWidth="13dp" />
+
+            <com.yoyogo.android.view.DrawableTextView
+                android:id="@+id/travle_cost"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:drawablePadding="10dp"
+                android:gravity="start|center_vertical"
+                android:text="3天"
+                android:textColor="@color/common_color"
+                android:textSize="15sp"
+                app:leftDrawable="@mipmap/travel_cost"
+                app:leftDrawableHeight="13dp"
+                app:leftDrawableWidth="13dp" />
+        </LinearLayout>
+    </RelativeLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="5dp"
+        android:layout_marginTop="10dp"
+        android:background="@color/cut_off_line"/>
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/user_travel_recyclerview"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"/>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="5dp"
+        android:layout_marginTop="10dp"
+        android:background="@color/cut_off_line"/>
+</LinearLayout>

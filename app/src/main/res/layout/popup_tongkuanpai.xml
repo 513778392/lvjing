@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@color/colorWhite"
+    xmlns:lh2="http://schemas.android.com/tools">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:orientation="vertical"
+        android:layout_height="match_parent">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_weight="1"
+            android:background="@color/province_line_border"
+            android:layout_height="0dp">
+            <ImageView
+                android:id="@+id/tongkuan_iv"
+                android:scaleType="fitXY"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" />
+            <RelativeLayout
+                android:id="@+id/duibi_lin"
+                android:visibility="gone"
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_centerInParent="true"
+                    android:layout_height="wrap_content">
+                <ImageView
+                    android:id="@+id/duibi_iv1"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="wrap_content" />
+                    <ImageView
+                        android:layout_marginLeft="10dp"
+                        android:id="@+id/duibi_iv2"
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        android:layout_height="wrap_content" />
+                </LinearLayout>
+                <ImageView
+                    android:src="@drawable/vs"
+                    android:layout_centerInParent="true"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+            </RelativeLayout>
+        </RelativeLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:orientation="vertical"
+            android:layout_height="200dp">
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_gravity="right|center_vertical"
+                android:layout_marginTop="20dp"
+                android:layout_marginRight="20dp"
+                android:orientation="horizontal"
+                android:gravity="center_vertical"
+                android:layout_height="40dp">
+                <TextView
+                    android:id="@+id/duibi"
+                    android:text="对比照"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+                <viewlist.DrawableSwitch
+                    android:id="@+id/drawableSwitch"
+                    android:layout_width="60dp"
+                    android:layout_height="30dp"
+                    android:layout_marginLeft="10dp"
+                   />
+
+            </LinearLayout>
+            <SeekBar
+                android:id="@+id/seekbar"
+                android:layout_marginLeft="20dp"
+                android:max="10"
+                android:layout_marginRight="20dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                />
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_weight="1"
+            android:layout_height="0dp">
+            <ImageView
+                android:id="@+id/baocun"
+                android:layout_width="wrap_content"
+                android:layout_centerInParent="true"
+                android:src="@drawable/querenbaocun"
+                android:layout_height="70dp" />
+
+            <LinearLayout
+                android:id="@+id/chongpai"
+                android:layout_width="wrap_content"
+                android:orientation="vertical"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="50dp"
+                android:layout_height="wrap_content">
+                <ImageView
+                    android:src="@drawable/chongpai"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+                <TextView
+                    android:text="重拍"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+            </LinearLayout>
+
+        </RelativeLayout>
+
+        </LinearLayout>
+    </LinearLayout>
+
+    <ImageView
+        android:id="@+id/back_icon"
+        android:src="@mipmap/back_icon"
+        android:layout_width="wrap_content"
+        android:layout_margin="20dp"
+        android:layout_height="30dp"
+        />
+</RelativeLayout>

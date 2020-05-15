@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="10dp"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp">
+
+        <ImageView
+            android:id="@+id/user_comment_icon"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:src="@mipmap/touxiang"
+            />
+
+        <TextView
+            android:id="@+id/userName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@id/user_comment_icon"
+            android:layout_alignParentTop="true"
+            android:layout_alignTop="@id/user_comment_icon"
+            android:layout_marginLeft="5dp"
+            android:layout_toRightOf="@id/user_comment_icon"
+            android:text="温暖的日子"
+            android:textColor="#333333" />
+
+        <TextView
+            android:id="@+id/tv_comment_time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/userName"
+            android:layout_marginLeft="5dp"
+            android:layout_toRightOf="@id/user_comment_icon"
+            android:text="1小时前" />
+
+        <com.yoyogo.android.view.DrawableTextView
+            android:id="@+id/comment"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:drawablePadding="5dp"
+            android:gravity="start|center_vertical"
+            android:text="123"
+            android:textColor="@color/desc_color"
+            app:leftDrawable="@mipmap/comment_icon"
+            app:leftDrawableHeight="13dp"
+            app:leftDrawableWidth="12dp" />
+
+        <com.yoyogo.android.view.DrawableTextView
+            android:id="@+id/like"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="50dp"
+            android:layout_toLeftOf="@id/comment"
+            android:drawablePadding="5dp"
+            android:gravity="start|center_vertical"
+            android:text="123"
+            android:textColor="@color/desc_color"
+            app:leftDrawable="@mipmap/like_icon"
+            app:leftDrawableHeight="14dp"
+            app:leftDrawableWidth="12dp" />
+    </RelativeLayout>
+
+    <com.borjabravo.readmoretextview.ReadMoreTextView
+        android:id="@+id/text_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="65dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="10dp"
+        android:text="我都要是的测试看看行不喜啦胜多负少士大夫似的和是的分红手动阀手动阀还是都手动阀手动阀还是都是的分红速度和发射东方红山东是的分红说的话佛山" />
+</LinearLayout>

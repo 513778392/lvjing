@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/bg_color_2"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/tv_hotel"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp_50"
+        android:background="@color/colorWhite"
+        android:gravity="center"
+        android:text="@string/str_hotel"
+        android:textColor="@color/common_color"
+        android:textSize="@dimen/sp_16" />
+
+    <View style="@style/CommonLine_Style" />
+
+    <TextView
+        android:id="@+id/tv_food"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp_50"
+        android:background="@color/colorWhite"
+        android:gravity="center"
+        android:text="@string/str_food"
+        android:textColor="@color/common_color"
+        android:textSize="@dimen/sp_16" />
+
+    <View style="@style/CommonLine_Style" />
+
+    <TextView
+        android:id="@+id/tv_shopping"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp_50"
+        android:background="@color/colorWhite"
+        android:gravity="center"
+        android:text="@string/str_shopping"
+        android:textColor="@color/common_color"
+        android:textSize="@dimen/sp_16" />
+
+    <View style="@style/CommonLine_Style" />
+
+    <TextView
+        android:id="@+id/tv_feature"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp_50"
+        android:background="@color/colorWhite"
+        android:gravity="center"
+        android:text="@string/str_feature"
+        android:textColor="@color/common_color"
+        android:textSize="@dimen/sp_16" />
+
+    <View style="@style/CommonLine_Style" />
+
+    <TextView
+        android:id="@+id/tv_other"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp_50"
+        android:background="@color/colorWhite"
+        android:gravity="center"
+        android:text="@string/str_other"
+        android:textColor="@color/common_color"
+        android:textSize="@dimen/sp_16" />
+
+    <TextView
+        android:id="@+id/tv_cancel"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp_50"
+        android:layout_marginTop="@dimen/dp_10"
+        android:background="@color/colorWhite"
+        android:gravity="center"
+        android:text="@string/cancel"
+        android:textColor="@color/common_color"
+        android:textSize="@dimen/sp_16" />
+</LinearLayout>

@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/dp_80">
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/user_icon"
+        android:layout_marginLeft="@dimen/dp_15"
+        android:layout_centerVertical="true"
+        android:src="@mipmap/touxiang"
+        android:layout_width="@dimen/dp_50"
+        android:layout_height="@dimen/dp_50" />
+
+    <TextView
+        android:gravity="center"
+        android:layout_marginLeft="@dimen/dp_10"
+        android:layout_marginTop="@dimen/dp_17"
+        android:textSize="@dimen/sp_15"
+        android:textColor="@color/orgeen_color"
+        android:text="XXX"
+        android:layout_toRightOf="@id/user_icon"
+        android:id="@+id/user_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+    <TextView
+        android:layout_marginLeft="@dimen/dp_10"
+        android:textSize="@dimen/sp_12"
+        android:textColor="@color/desc_color_888888"
+        android:layout_marginTop="@dimen/dp_19"
+        android:layout_toRightOf="@id/user_name"
+        android:text="关注了我"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <TextView
+        android:layout_toRightOf="@id/user_icon"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/user_name"
+        android:layout_marginLeft="@dimen/dp_10"
+        android:layout_marginTop="@dimen/dp_10"
+        android:text="1分钟前"
+        android:textColor="@color/desc_color_888888"
+        android:textSize="@dimen/sp_12" />
+
+    <View
+        android:layout_width="@dimen/dp_6"
+        android:layout_height="@dimen/dp_6"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:layout_marginRight="@dimen/dp_15"
+        android:background="@drawable/circle_shape" />
+</RelativeLayout>

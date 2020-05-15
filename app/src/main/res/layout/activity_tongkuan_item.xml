@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.yoyogo.android.ui.activity.TongkuanItemActivity">
+
+    <ImageView
+        android:id="@+id/fengjing"
+        android:src="@mipmap/fengjing"
+        android:scaleType="fitXY"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+        <ImageView
+            android:id="@+id/back"
+            android:src="@mipmap/back_icon"
+            android:layout_margin="20dp"
+            android:layout_width="30dp"
+            android:layout_height="30dp" />
+        <ImageView
+            android:layout_alignParentRight="true"
+            android:layout_margin="20dp"
+            android:src="@drawable/fenxiang_bai"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+    <ImageView
+        android:id="@+id/paitongkuan"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="20dp"
+        android:src="@drawable/paitongkuan"
+        android:layout_width="wrap_content"
+        android:layout_above="@+id/linear"
+        android:layout_marginBottom="100dp"
+        android:layout_height="wrap_content" />
+    <View
+        android:layout_width="match_parent"
+        android:background="@color/colorWhite"
+        android:layout_above="@+id/linear"
+        android:layout_height="0.1dp"/>
+    <LinearLayout
+        android:id="@+id/linear"
+        android:layout_width="match_parent"
+        android:layout_alignParentBottom="true"
+        android:gravity="center_vertical"
+        android:layout_height="60dp">
+        <LinearLayout
+            android:layout_weight="1"
+            android:gravity="center"
+            android:layout_width="0dp"
+            android:orientation="vertical"
+            android:layout_height="match_parent">
+        <ImageView
+            android:layout_width="wrap_content"
+            android:src="@drawable/chakan"
+            android:layout_height="wrap_content" />
+            <TextView
+                android:text="123"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+        <View
+            android:layout_width="0.1dp"
+            android:background="@color/colorWhite"
+            android:layout_gravity="center_vertical"
+            android:layout_height="30dp"/>
+        <LinearLayout
+            android:layout_weight="1"
+            android:gravity="center"
+            android:layout_width="0dp"
+            android:orientation="vertical"
+            android:layout_height="match_parent">
+            <ImageView
+                android:layout_width="wrap_content"
+                android:src="@drawable/msg"
+                android:layout_height="wrap_content" />
+            <TextView
+                android:text="123"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+        <View
+            android:layout_width="0.1dp"
+            android:background="@color/colorWhite"
+            android:layout_gravity="center_vertical"
+            android:layout_height="30dp"/>
+        <LinearLayout
+            android:layout_weight="1"
+            android:gravity="center"
+            android:layout_width="0dp"
+            android:orientation="vertical"
+            android:layout_height="match_parent">
+            <ImageView
+                android:layout_width="wrap_content"
+                android:src="@drawable/shoucang"
+                android:layout_height="wrap_content" />
+            <TextView
+                android:text="123"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+        <View
+            android:layout_width="0.1dp"
+            android:background="@color/colorWhite"
+            android:layout_gravity="center_vertical"
+            android:layout_height="30dp"/>
+        <LinearLayout
+            android:layout_weight="1"
+            android:gravity="center"
+            android:layout_width="0dp"
+            android:orientation="vertical"
+            android:layout_height="match_parent">
+            <ImageView
+                android:layout_width="wrap_content"
+                android:src="@drawable/xihuan"
+                android:layout_height="wrap_content" />
+            <TextView
+                android:text="123"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+    </LinearLayout>
+
+</RelativeLayout>

@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<resources>
+
+
+    <declare-styleable name="linewarplayout">
+        <attr name="magin" format="integer" />
+        <attr name="itemBg" format="reference"></attr>
+    </declare-styleable>
+
+    <declare-styleable name="SpaceBar">
+        <attr name="minNum" format="integer" />
+        <attr name="maxNum" format="integer" />
+    </declare-styleable>
+
+    <!--自定义MLImageView的属性 加上了自己的前缀，防止和其他自定义控件冲突-->
+    <declare-styleable name="MLImageView">
+        <attr name="ml_border_color" format="color" />
+        <attr name="ml_border_width" format="dimension" />
+        <attr name="ml_press_alpha" format="integer" />
+        <attr name="ml_press_color" format="color" />
+        <attr name="ml_radius" format="dimension" />
+        <attr name="ml_shape_type" format="enum">
+            <enum name="none" value="0" />
+            <enum name="round" value="1" />
+            <enum name="rectangle" value="2" />
+        </attr>
+    </declare-styleable>
+
+    <declare-styleable name="drawableSwitch">
+        <attr name="radius" format="dimension" />
+        <attr name="switchOnColor" format="color" />
+        <attr name="switchOffColor" format="color" />
+        <attr name="circleColor" format="color" />
+        <attr name="isSwitchOn" format="boolean"/>
+    </declare-styleable>
+
+
+
+</resources>

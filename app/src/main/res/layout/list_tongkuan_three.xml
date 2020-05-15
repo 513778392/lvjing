@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:background="@color/colorWhite"
+    android:layout_height="wrap_content">
+
+    <ImageView
+        android:id="@+id/three_iv"
+        android:scaleType="fitXY"
+        android:src="@mipmap/fengjing"
+        android:layout_marginBottom="2dp"
+        android:layout_width="match_parent"
+        android:layout_height="150dp" />
+</RelativeLayout>

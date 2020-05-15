@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/black"
+    android:orientation="vertical">
+
+    <LinearLayout
+
+        android:id="@+id/title_bar_layout"
+        android:layout_width="match_parent"
+        android:layout_height="44dp"
+        android:orientation="horizontal">
+
+        <ImageButton
+            android:id="@+id/imgbtn"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="20dp"
+            android:background="@null"
+            android:paddingBottom="15dp"
+            android:paddingLeft="19dp"
+            android:paddingRight="19dp"
+            android:paddingTop="15dp"
+            android:scaleType="centerInside"
+            android:src="@mipmap/back_icon" />
+
+        <TextView
+            android:id="@+id/title"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_gravity="center_vertical"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="标题"
+            android:textColor="@color/colorWhite"
+            android:textSize="15sp" />
+
+        <ImageButton
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_gravity="center_vertical"
+            android:layout_marginRight="20dp"
+            android:background="@null"
+            android:paddingBottom="@dimen/dp_10"
+            android:paddingLeft="12dp"
+            android:paddingRight="12dp"
+            android:paddingTop="@dimen/dp_10"
+            android:scaleType="centerInside"
+            android:src="@mipmap/pic_see" />
+
+    </LinearLayout>
+
+    <android.support.v4.view.ViewPager
+        android:background="@color/black"
+        android:id="@+id/viewpager"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"></android.support.v4.view.ViewPager>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="55dp"
+        android:layout_marginTop="5dp">
+
+        <ImageView
+            android:id="@+id/user_icon"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="20dp"
+            android:src="@mipmap/touxiang"
+            />
+
+        <TextView
+            android:id="@+id/user_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="7dp"
+            android:layout_toRightOf="@id/user_icon"
+            android:text="不会飞的鱼"
+            android:textColor="@color/common_color"
+            android:textSize="12sp" />
+
+        <TextView
+            android:id="@+id/zu_num"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/user_title"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="5dp"
+            android:layout_toRightOf="@id/user_icon"
+            android:gravity="center"
+            android:text="180"
+            android:textColor="@color/desc_color"
+            android:textSize="10sp" />
+
+
+        <!--<Button-->
+            <!--android:layout_width="60dp"-->
+            <!--android:layout_height="30dp"-->
+            <!--android:layout_alignParentRight="true"-->
+            <!--android:layout_centerVertical="true"-->
+            <!--android:background="@drawable/attention_btn_bg_unselect"-->
+            <!--android:gravity="center"-->
+            <!--android:text="@string/str_add_attention"-->
+            <!--android:textColor="@color/colorWhite"-->
+            <!--android:textSize="12sp" />-->
+
+
+
+        <com.yoyogo.android.view.DrawableTextView
+            android:id="@+id/tv_shoucang"
+            android:textColor="@color/colorWhite"
+            android:layout_centerVertical="true"
+            android:layout_alignParentRight="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="27dp"
+            android:layout_marginRight="20dp"
+            android:text="123"
+            app:topDrawable="@mipmap/comment_shoucang"
+            app:topDrawableHeight="13dp"
+            app:topDrawableWidth="12dp" />
+
+        <com.yoyogo.android.view.DrawableTextView
+            android:layout_toLeftOf="@id/tv_shoucang"
+            android:textColor="@color/colorWhite"
+            android:layout_centerVertical="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="35dp"
+            android:text="123"
+            app:topDrawable="@mipmap/comment_like"
+            app:topDrawableHeight="13dp"
+            app:topDrawableWidth="12dp" />
+    </RelativeLayout>
+</LinearLayout>

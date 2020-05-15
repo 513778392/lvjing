@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="65dp"
+    android:background="@color/colorWhite">
+
+    <TextView
+        android:paddingLeft="20dp"
+        android:paddingRight="10dp"
+        android:textColor="@color/orgeen_color"
+        android:textSize="25sp"
+        android:id="@+id/recommend_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:text="@string/indext_title_recommend" />
+
+    <TextView
+        android:textColor="#333333"
+        android:paddingLeft="10dp"
+        android:paddingRight="@dimen/dp_10"
+        android:textSize="15sp"
+        android:id="@+id/attendtion_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_toRightOf="@id/recommend_tv"
+        android:gravity="center"
+        android:text="@string/indext_title_attention" />
+
+    <TextView
+        android:id="@+id/location"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:layout_marginRight="20dp"
+        android:text="北京"
+        android:textColor="@color/title_bar_textx_color"
+        android:textSize="15sp" />
+
+    <ImageView
+        android:id="@+id/location_icon"
+        android:layout_width="20dp"
+        android:layout_height="20dp"
+        android:layout_centerVertical="true"
+        android:layout_marginRight="5dp"
+        android:layout_toLeftOf="@id/location"
+        android:src="@mipmap/index_location" />
+
+    <ImageView
+        android:id="@+id/search_icon"
+        android:layout_width="20dp"
+        android:layout_height="20dp"
+        android:layout_centerVertical="true"
+        android:layout_marginRight="25dp"
+        android:layout_toLeftOf="@id/location_icon"
+        android:src="@mipmap/index_search" />
+</RelativeLayout>

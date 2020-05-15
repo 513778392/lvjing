@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="250dp"
+    android:layout_height="183.5dp"
+    android:background="@mipmap/diaglog_bg_login">
+
+    <ImageView
+        android:id="@+id/dialog_close"
+        android:layout_width="20dp"
+        android:layout_height="41.5dp"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="5dp"
+        android:layout_marginTop="15dp"
+        android:src="@mipmap/dialog_close_login" />
+
+    <LinearLayout
+        android:id="@+id/ll_dialog_content"
+        android:layout_width="match_parent"
+        android:layout_height="78dp"
+        android:layout_below="@id/dialog_close"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_marginTop="@dimen/dp_10"
+            android:id="@+id/title_dialog"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:gravity="center"
+            android:text="@string/yo_tips"
+            android:textColor="#333333"
+            android:textSize="15sp" />
+
+        <EditText
+            android:textColorHint="@color/desc_color_888888"
+            android:paddingLeft="@dimen/dp_5"
+            android:hint="输入16个字以内哦~"
+            android:maxLength="16"
+            android:layout_marginBottom="@dimen/dp_10"
+            android:layout_marginTop="@dimen/dp_10"
+            android:layout_marginLeft="@dimen/dp_10"
+            android:layout_marginRight="@dimen/dp_10"
+            android:background="@drawable/wo_de_zhuan_shu_shape"
+            android:id="@+id/lable_et"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="center_horizontal"
+            android:gravity="center_vertical"
+            android:textColor="#333333"
+            android:textSize="@dimen/sp_12" />
+    </LinearLayout>
+
+    <View
+        style="@style/BaseCommonLine"
+        android:layout_height="1dp"
+        android:layout_below="@id/ll_dialog_content" />
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="49dp"
+        android:layout_below="@id/ll_dialog_content">
+
+        <TextView
+            android:layout_weight="1"
+            android:id="@+id/dialog_cancel"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:text="@string/cancel"
+            android:textColor="#333333"
+            android:textSize="15sp" />
+
+        <View
+            android:layout_gravity="center_vertical"
+            android:id="@+id/div"
+            android:layout_width="1dp"
+            android:layout_height="20dp"
+            android:layout_centerInParent="true"
+            android:background="@color/cut_off_line" />
+
+
+        <TextView
+            android:layout_weight="1"
+            android:id="@+id/dialog_confirm"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_toRightOf="@id/div"
+            android:gravity="center"
+            android:text="@string/save"
+            android:textColor="#fa800a"
+            android:textSize="15sp" />
+    </LinearLayout>
+</RelativeLayout>

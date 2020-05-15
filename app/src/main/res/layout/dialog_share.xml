@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/white_bg_conner_10dp"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="120dp"
+        android:orientation="horizontal">
+
+        <com.yoyogo.android.view.DrawableTextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_weight="1"
+            android:drawablePadding="@dimen/dp_10"
+            android:gravity="center"
+            android:text="@string/wechat_friend"
+            android:textColor="@color/common_color"
+            android:textSize="@dimen/sp_12"
+            app:topDrawable="@mipmap/wechat"
+            app:topDrawableHeight="@dimen/dp_50"
+            app:topDrawableWidth="@dimen/dp_50" />
+
+        <com.yoyogo.android.view.DrawableTextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_weight="1"
+            android:drawablePadding="@dimen/dp_10"
+            android:gravity="center"
+            android:text="@string/str_moments"
+            android:textColor="@color/common_color"
+            android:textSize="@dimen/sp_12"
+            app:topDrawable="@mipmap/pengyouquan"
+            app:topDrawableHeight="@dimen/dp_50"
+            app:topDrawableWidth="@dimen/dp_50" />
+
+        <com.yoyogo.android.view.DrawableTextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_weight="1"
+            android:drawablePadding="@dimen/dp_10"
+            android:gravity="center"
+            android:text="@string/str_qq_firend"
+            android:textColor="@color/common_color"
+            android:textSize="@dimen/sp_12"
+            app:topDrawable="@mipmap/qq"
+            app:topDrawableHeight="@dimen/dp_50"
+            app:topDrawableWidth="@dimen/dp_50" />
+
+        <com.yoyogo.android.view.DrawableTextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_weight="1"
+            android:drawablePadding="@dimen/dp_10"
+            android:gravity="center"
+            android:text="@string/str_weibo"
+            android:textColor="@color/common_color"
+            android:textSize="@dimen/sp_12"
+            app:topDrawable="@mipmap/weibo"
+            app:topDrawableHeight="@dimen/dp_50"
+            app:topDrawableWidth="@dimen/dp_50" />
+    </LinearLayout>
+
+    <View style="@style/CommonLine_Style" />
+
+    <TextView
+        android:id="@+id/tv_cancel"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp_50"
+        android:gravity="center"
+        android:text="@string/str_cancel"
+        android:textColor="@color/common_color"
+        android:textSize="@dimen/sp_15" />
+</LinearLayout>

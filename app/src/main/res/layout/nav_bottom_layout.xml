@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="50dp"
+    android:background="#F2ffffff"
+    android:orientation="vertical">
+    <ImageView
+        android:id="@+id/cam"
+        android:layout_width="45dp"
+        android:layout_height="45dp"
+        android:layout_centerInParent="true"
+        android:scaleType="fitXY"
+        android:src="@mipmap/cam" />
+
+    <LinearLayout
+        android:id="@+id/index_layout"
+        android:gravity="center"
+        android:layout_width="50dp"
+        android:layout_height="match_parent"
+        android:layout_marginRight="71dp"
+        android:layout_toLeftOf="@id/cam">
+
+        <ImageView
+            android:id="@+id/index"
+            android:layout_width="22dp"
+            android:layout_height="22dp"
+            android:layout_centerVertical="true"
+            android:layout_gravity="center"
+            android:background="@drawable/index_me_selector"
+            android:scaleType="fitXY" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/me_layout"
+        android:gravity="center"
+        android:layout_width="50dp"
+        android:layout_height="match_parent"
+        android:layout_marginLeft="71dp"
+        android:layout_toRightOf="@id/cam">
+
+        <ImageView
+            android:id="@+id/me"
+            android:layout_width="22dp"
+            android:layout_height="22dp"
+            android:layout_centerVertical="true"
+            android:layout_gravity="center"
+            android:background="@drawable/index_me_selector" />
+    </LinearLayout>
+
+</RelativeLayout>

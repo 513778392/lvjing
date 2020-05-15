@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:background="@color/colorWhite"
+    android:layout_height="match_parent">
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_weight="1"
+        android:background="@color/colorWhite"
+        android:layout_height="0dp">
+    <VideoView
+        android:layout_width="match_parent"
+        android:id="@+id/videoView"
+        android:layout_height="match_parent" />
+        <LinearLayout
+            android:id="@+id/fanhui"
+            android:layout_width="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:gravity="center_vertical"
+            android:layout_height="50dp">
+            <ImageView
+                android:src="@mipmap/back_icon"
+                android:layout_width="wrap_content"
+                android:layout_height="20dp" />
+            <TextView
+                android:text="返回"
+                android:layout_marginLeft="3dp"
+                android:textColor="@color/colorWhite"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+    </RelativeLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:orientation="vertical"
+        android:layout_height="160dp">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:orientation="horizontal"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_height="100dp">
+
+        <viewlist.SpaceBar
+            android:id="@+id/space"
+            android:layout_width="match_parent"
+
+            android:layout_height="100dp"
+            app:maxNum="100"
+            app:minNum="0"
+            />
+
+        </LinearLayout>
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="60dp">
+            <ImageView
+                android:id="@+id/qu"
+                android:src="@drawable/quxiao"
+                android:layout_width="wrap_content"
+                android:padding="10dp"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="20dp"
+                android:layout_height="wrap_content" />
+            <ImageView
+                android:id="@+id/que"
+                android:src="@drawable/queren"
+                android:layout_marginRight="20dp"
+                android:layout_centerVertical="true"
+                android:padding="10dp"
+                android:layout_alignParentRight="true"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+        </RelativeLayout>
+    </LinearLayout>
+    </LinearLayout>
+</LinearLayout>
